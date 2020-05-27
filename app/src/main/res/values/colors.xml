@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#C9C8C8</color>
+    <color name="textviewscolor">#302A2A</color>
+    <color name="create">#1B5588</color>
+    <color name="loginbutton">#DC51C43A</color>
+    <color name="white">#FCFCFC</color>
+    <color name="gray">#e6e6e6</color>
+    <color name="txt_color">#3A8DD8</color>
+    <color name="toolbarbc">#F5F4F4</color>
+    <color name="border">#FAFAFA</color>
+    <color name="black">#0F0F0F</color>
+    <color name="bl">#464242</color>
+    <color name="gege">#EEF7F7F7</color>
+    <color name="notif">#E4E3E3</color>
+    <color name="red">#F03E3E</color>
+
+
+</resources>

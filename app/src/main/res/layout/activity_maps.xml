@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_5xl"
+        android:background="@color/toolbarbc"
+        android:id="@+id/MapsActivity_rl_header"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/txt_size_l"
+            android:layout_height="@dimen/txt_size_l"
+            android:id="@+id/MapsActivity_img_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dim_s"
+            android:background="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MapsActivity_tv_fav"
+            android:layout_centerInParent="true"
+            android:text="Select your Location"
+            android:textColor="@color/create"
+            android:textSize="@dimen/dim_xl" />
+
+    </RelativeLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="680dp"
+    tools:context=".ui.activity.MapsActivity">
+</fragment>
+    <Button
+        android:id="@+id/MapsActivity_btn_savelocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/create"
+        android:textColor="@color/white"
+        android:text="Save location"
+        android:textSize="@dimen/dim_l"/>
+
+</LinearLayout>

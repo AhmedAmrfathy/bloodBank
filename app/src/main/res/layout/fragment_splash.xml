@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_bg"
+    tools:context=".ui.fragment.splashcycle.SplashFragment">
+
+    <ImageView
+        android:layout_width="@dimen/dim_21xl"
+        android:layout_height="@dimen/dim_21xl"
+        android:background="@drawable/ic_logo"
+        android:layout_marginTop="@dimen/dim_27xl"
+        android:layout_marginStart="@dimen/dim_16xl"
+        />
+
+</LinearLayout>

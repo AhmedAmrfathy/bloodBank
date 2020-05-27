@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.navigationcycle.AboutApp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_5xl"
+        android:background="@color/toolbarbc"
+        android:id="@+id/AboutApp_fragment_rl_header"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/txt_size_l"
+            android:layout_height="@dimen/txt_size_l"
+            android:id="@+id/AboutApp_fragment_img_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dim_s"
+            android:background="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AboutApp_fragment_tv_aboutapp"
+            android:layout_centerInParent="true"
+            android:text="About App"
+            android:textColor="@color/create"
+            android:textSize="@dimen/dim_xl" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Fragment_AbouutApp_tv_content"
+                android:layout_margin="@dimen/ten"
+                />
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

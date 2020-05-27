@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_l"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginBottom="@dimen/two"
+        android:button="@drawable/checkboxdesign"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:textColor="@color/create"
+        android:textSize="16sp" />
+
+</RelativeLayout>

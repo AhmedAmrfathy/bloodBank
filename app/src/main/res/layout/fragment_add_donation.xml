@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_bg"
+
+    tools:context=".ui.fragment.AddDonation">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_5xl"
+        android:background="@color/toolbarbc"
+        android:id="@+id/fragment_adddonation_tv_createnewaccount"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/twenty"
+            android:layout_height="@dimen/twenty"
+            android:id="@+id/AddDonation_fragment_tv_notifcount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginEnd="@dimen/dim_s"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+        <ImageView
+            android:layout_width="@dimen/txt_size_l"
+            android:layout_height="@dimen/txt_size_l"
+            android:id="@+id/Favourite_img_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dim_s"
+            android:background="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Favourite_tv_fav"
+            android:layout_centerInParent="true"
+            android:text="Donation request"
+            android:textColor="@color/create"
+            android:textSize="@dimen/dim_xl" />
+        <ImageView
+            android:layout_width="@dimen/dim_28dp"
+            android:layout_height="@dimen/dim_28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="13dp"
+            android:id="@+id/AddDonation_img_notfi"
+            android:background="@drawable/notfi" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_adddonation_til_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_adddonation_ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/tvName"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_adddonation_til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_adddonation_til_name"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_m"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_adddonation_ed_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:hint="@string/age"
+                    android:inputType="number"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_register_til_dateofbirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_adddonation_til_email"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <TextView
+                    android:id="@+id/fragment_adddonation_ed_dateofbirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/ic_cake"
+                    android:hint="@string/date_of_birth"
+                    android:inputType="date"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/fragment_adddonation_spiner_bloodtype"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/txt_size_4xl"
+                android:layout_below="@id/fragment_adddonation_til_email"
+                android:layout_alignEnd="@+id/fragment_register_til_dateofbirth"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_m"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m" />
+
+            <EditText
+                android:id="@+id/fragmentadddonation_ed_numberofcys"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/txt_size_4xl"
+                android:layout_below="@id/fragment_adddonation_spiner_bloodtype"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_m"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_adddonation_til_hospitalname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragmentadddonation_ed_numberofcys"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_m"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_adddonation_ed_hospitalname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:hint="@string/hospital_name"
+                    android:inputType="text"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_adddonation_til_hospitaladdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_adddonation_til_hospitalname"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_m"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <EditText
+                    android:id="@+id/fragment_adddonation_tv_hospitaladdress"
+                    android:layout_width="@dimen/dim_27xl"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:hint="Hospital address"
+                    android:inputType="text"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+                <ImageView
+                    android:id="@+id/fragment_adddonation_img_hospitaladdress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gps"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/fragmentadddonationSpinerGovernorate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/txt_size_4xl"
+                android:layout_below="@id/fragment_adddonation_til_hospitaladdress"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_m"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m"/>
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/fragmentadddonationSpinerCityid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/txt_size_4xl"
+                android:layout_below="@id/fragmentadddonationSpinerGovernorate"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_m"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_adddonation_til_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragmentadddonationSpinerCityid"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_m"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_adddonation_ed_phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_adddonation_til_Notice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_16xl"
+                android:layout_below="@id/fragment_adddonation_til_phonenumber"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_adddonation_tv_Notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:hint="Notices"
+                    android:inputType="text"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/fragment_adddonation_btn_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_adddonation_til_Notice"
+                android:layout_marginStart="@dimen/dim_l"
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:background="@drawable/button"
+                android:text="@string/send"
+                android:textSize="@dimen/txt_size_l" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

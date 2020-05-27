@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    tools:context=".ui.fragment.usercycle.RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_about_me_tv_Editprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/twenty"
+                android:background="@color/gray"
+                android:gravity="center"
+                android:padding="@dimen/dim_l"
+                android:text="@string/edit_profile_information"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/txt_size_l" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_aboutme_til_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_aboutme_ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_aboutme_til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_aboutme_ed_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_aboutme_til_dateofbirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <TextView
+                    android:id="@+id/fragment_aboutme_ed_dateofbirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/ic_cake"
+                    android:hint="@string/date_of_birth"
+                    android:inputType="date"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/fragment_aboutme_spiner_bloodtype"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/txt_size_4xl"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_aboutme_til_lastdonationname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <TextView
+                    android:id="@+id/fragment_aboutme_ed_lastdonationname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/ic_cake"
+                    android:hint="@string/last_donation_date"
+                    android:inputType="date"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/fragmentaboutmeSpinerGovernorate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/txt_size_4xl"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/fragmentaboutmeSpinerCityid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/txt_size_4xl"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_aboutme_til_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_aboutme_ed_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_aboutme_til_passwordconfig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_aboutme_tv_passwordconfig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:hint="@string/re_password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_aboutme_til_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_m"
+                android:layout_marginTop="@dimen/dim_s"
+                android:layout_marginEnd="@dimen/dim_m"
+                android:background="@drawable/shape_et"
+                android:padding="@dimen/dim_m">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_aboutme_ed_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eight"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:textColor="@color/textviewscolor"
+                    android:textSize="@dimen/textviewssize" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/fragment_aboutme_btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_l"
+                android:layout_marginTop="@dimen/thirty"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:background="@drawable/button"
+                android:text="@string/save"
+                android:textSize="@dimen/txt_size_l" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

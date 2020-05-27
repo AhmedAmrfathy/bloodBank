@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_7xl"
+    android:background="@drawable/notificationitembackground">
+
+    <ImageView
+        android:id="@+id/notimg"
+        android:layout_width="@dimen/dim_2xl"
+        android:layout_height="@dimen/dim_2xl"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/ten" />
+
+    <TextView
+        android:id="@+id/nottext"
+        android:layout_width="@dimen/dim_22xl"
+        android:layout_height="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="13dp"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/notifdate"
+        android:layout_width="@dimen/dim_22xl"
+        android:layout_height="@dimen/dim_2xl"
+        android:layout_toEndOf="@+id/nottext"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="@dimen/ten"
+        android:textSize="14sp"
+       />
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.navigationcycle.Repair">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_6xl"
+            android:background="@color/toolbarbc"
+            android:layout_marginTop="@dimen/zero"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/dim_xl"
+                android:layout_height="@dimen/dim_xl"
+                android:id="@+id/tlatshort"
+                android:layout_marginStart="@dimen/dim_xl"
+                android:layout_marginTop="@dimen/twenty"
+                android:background="@drawable/tot" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/notif"
+                android:layout_width="@dimen/dim_xl"
+                android:layout_height="@dimen/dim_xl"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dim_xl"
+                android:layout_marginEnd="@dimen/dim_xl"
+                android:background="@drawable/nonitysmall" />
+            <TextView
+                android:layout_width="@dimen/twenty"
+                android:layout_height="@dimen/twenty"
+                android:id="@+id/Repair_fragment_tv_notifcount"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginEnd="@dimen/thirteen"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/zero"
+            android:orientation="vertical">
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Fragment_tb_head"
+                app:tabMode="fixed"
+                app:tabMaxWidth="0dp"
+                app:tabGravity="fill"
+                app:tabTextColor="@color/create"
+                app:tabSelectedTextColor="@color/white"
+                app:tabIndicatorColor="@color/white"
+                app:tabBackground="@drawable/tabitem"
+                android:minHeight="?attr/actionBarSize">
+            </android.support.design.widget.TabLayout>
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Fragment_vp_vp">
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/Fragment_fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

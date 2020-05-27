@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.navigationcycle.NotificationSettings">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_5xl"
+        android:background="@drawable/bordersp"
+        android:id="@+id/NotificationSettings_fragment_rl_header">
+        <ImageView
+            android:layout_width="@dimen/txt_size_l"
+            android:layout_height="@dimen/txt_size_l"
+            android:id="@+id/NotificationSettings_fragment_img_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dim_s"
+            android:background="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NotificationSettings_fragment_tv_aboutapp"
+            android:layout_centerInParent="true"
+            android:text="Notification Settings"
+            android:textColor="@color/create"
+            android:textSize="@dimen/dim_xl" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_19xl"
+        android:id="@+id/NotificationSettings_fragment_tv_anytext"
+        android:layout_below="@+id/NotificationSettings_fragment_rl_header"
+        android:textAlignment="center"
+        android:layout_margin="@dimen/dim_l" />
+    <RelativeLayout
+        android:layout_width="@dimen/threeninezero"
+        android:layout_height="@dimen/dim_26xl"
+        android:id="@+id/NotificationSettings_fragment_linearlayout_bloodtype"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/NotificationSettings_fragment_tv_anytext"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:id="@+id/NotificationSettings_fragment_tv_bloodtype"
+            android:background="@drawable/toolbar"
+            android:text="@string/blood_types"
+            android:textColor="@color/create"
+            android:textSize="@dimen/twenty"
+            android:padding="@dimen/dim_m"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/NotificationSettings_fragment_rec_bloodtypes"
+            android:layout_below="@+id/NotificationSettings_fragment_tv_bloodtype"
+            android:layout_margin="@dimen/eight"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/threeninezero"
+        android:layout_height="@dimen/dim_23xl"
+        android:layout_below="@+id/NotificationSettings_fragment_linearlayout_bloodtype"
+        android:background="@drawable/border"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/ten">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:id="@+id/NotificationSettings_fragment_tv_governates"
+            android:background="@drawable/toolbar"
+            android:text="@string/governorates"
+            android:textColor="@color/create"
+            android:textSize="@dimen/twenty"
+            android:padding="@dimen/dim_s"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/NotificationSettings_fragment_tv_governates"
+            android:id="@+id/NotificationSettings_fragment_rec_governates"
+            android:layout_margin="@dimen/eight"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_3xl"
+        android:id="@+id/NotificationSettings_fragment_btn_save"
+        android:layout_marginTop="@dimen/dim_8xl"
+        android:background="@color/create"
+        android:text="@string/save"
+        android:textSize="@dimen/twenty"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+
+</RelativeLayout>

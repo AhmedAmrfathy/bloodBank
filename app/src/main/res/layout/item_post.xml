@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_26xl"
+    android:layout_marginTop="@dimen/dim_l"
+    android:layout_marginStart="@dimen/eight"
+    android:layout_marginEnd="@dimen/eight"
+    android:layout_marginBottom="@dimen/dim_l"
+    android:orientation="vertical"
+    android:background="@drawable/postboreder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/postboreder">
+
+        <TextView
+            android:id="@+id/recylerviewelemnt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dim_s"
+            android:background="@drawable/postboreder"/>
+
+        <ImageView
+            android:id="@+id/recylerviewelemnt_img_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dim_s"
+            android:background="@drawable/favourite_rec" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/recylerviewelemnt_img_main"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
+      />
+
+</LinearLayout>

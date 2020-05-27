@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/toolbarbc"
+    tools:context=".ui.fragment.navigationcycle.PostDetails">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_5xl"
+        android:background="@drawable/toolbar"
+        android:id="@+id/fragment_adddonation_tv_createnewaccount"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/txt_size_l"
+            android:layout_height="@dimen/txt_size_l"
+            android:id="@+id/Favourite_fragment_img_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dim_s"
+            android:background="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Favourite_fragment_tv_headertitle"
+            android:layout_centerInParent="true"
+            android:textColor="@color/create"
+            android:textSize="@dimen/dim_xl" />
+        <ImageView
+            android:layout_width="@dimen/dim_xl"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="18dp"
+            android:id="@+id/Favourite_fragment_img_notfi"
+            android:background="@drawable/notfi" />
+        <TextView
+            android:layout_width="@dimen/twenty"
+            android:layout_height="@dimen/twenty"
+            android:id="@+id/PostDetails_fragment_tv_notifcount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginEnd="@dimen/eight"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dim_27xl">
+       <ImageView
+           android:layout_width="@dimen/threesevenzero"
+           android:layout_height="@dimen/dim_27xl"
+           android:id="@+id/Favourite_fragment_img_baseimg"
+           android:layout_centerInParent="true"/>
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/threesevensix"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim_m"
+        android:layout_marginStart="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/dim_l"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:id="@+id/Favourite_fragment_tv_title"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginStart="@dimen/dim_m"
+            android:textSize="@dimen/dim_xl"
+            android:textColor="@color/create"
+            android:text="protect from diseas"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Favourite_fragment_tv_title">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Favourite_fragment_tv_content"
+                android:textSize="@dimen/dim_l"/>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

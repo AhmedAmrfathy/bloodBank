@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ShowIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_menu_item_aboutme"
+            android:icon="@drawable/ic_aboutme"
+            android:title="@string/about_me"></item>
+        <item
+            android:id="@+id/drawer_menu_item_notification"
+            android:icon="@drawable/notification"
+            android:title="@string/notification_settings"></item>
+        <item
+            android:id="@+id/drawer_menu_item_favourite"
+            android:icon="@drawable/ic_favourute"
+            android:title="@string/favouriteFragment"></item>
+        <item
+            android:id="@+id/drawer_menu_item_Main"
+            android:icon="@drawable/ic_main"
+            android:title="@string/notification_settings"></item>
+        <item
+            android:id="@+id/drawer_menu_item_usingcatalouge"
+            android:icon="@drawable/using_catalouge"
+            android:title="@string/using_catalouge"></item>
+        <item
+            android:id="@+id/drawer_menu_item_contact"
+            android:icon="@drawable/contact"
+            android:title="@string/contact"></item>
+        <item
+            android:id="@+id/drawer_menu_item_aboutapp"
+            android:icon="@drawable/about_app"
+            android:title="@string/about_app"></item>
+        <item
+            android:id="@+id/drawer_menu_item_apprate"
+            android:icon="@drawable/app_rate"
+            android:title="@string/app_rate"></item>
+        <item
+            android:id="@+id/drawer_menu_item_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/exit"></item>
+
+
+    </group>
+
+</menu>

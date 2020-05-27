@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_bg"
+    tools:context=".ui.fragment.NotificationList">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_5xl"
+        android:background="@color/toolbarbc"
+        android:id="@+id/NotificationList_fragment_rl_header"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/txt_size_l"
+            android:layout_height="@dimen/txt_size_l"
+            android:id="@+id/NotificationList_fragment_img_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dim_s"
+            android:background="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NotificationList_fragment_tv_aboutapp"
+            android:layout_centerInParent="true"
+            android:text="Notifications"
+            android:textColor="@color/create"
+            android:textSize="@dimen/dim_xl" />
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NotificationList_fragment_rv_notilist"
+        android:layout_margin="@dimen/dim_l">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>
